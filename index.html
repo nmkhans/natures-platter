@@ -43,7 +43,106 @@
       }
     </style>
 
-
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "nature-primary": "#179800",
+              "nature-secondary": "#53DB3A",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body></body>
+  <body>
+    <header class="py-2">
+      <div class="container mx-auto px-5">
+        <div class="navbar">
+          <div class="navbar-start grow justify-between">
+            <a href="#" class="w-[130px]">
+              <img src="./images/logo-header.png" alt="Header logo" />
+            </a>
+            <div class="dropdown relative">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost lg:hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0 top-8"
+              >
+                <li><a>Product</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact us</a></li>
+                <div class="navbar-end gap-x-10 mt-5 
+                 w-full">
+                  <div class="space-x-3 text-xl cursor-pointer ms-4">
+                    <span
+                      ><i class="fa-solid fa-magnifying-glass"></i
+                    ></span>
+                    <span
+                      ><i class="fa-solid fa-cart-shopping"></i
+                    ></span>
+                  </div>
+                  <div class="space-x-2 mt-2">
+                    <a
+                      class="btn btn-outline border-nature-primary hover:bg-nature-primary"
+                      >Login</a
+                    >
+                    <a
+                      class="btn bg-nature-primary text-white hover:bg-nature-secondary"
+                      >Register</a
+                    >
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Product</a></li>
+              <li><a>Services</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+          <div class="hidden lg:flex navbar-end gap-x-10">
+            <div class="space-x-3 text-xl cursor-pointer">
+              <span
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+              <span><i class="fa-solid fa-cart-shopping"></i></span>
+            </div>
+            <div class="space-x-2">
+              <a
+                class="btn btn-outline border-nature-primary hover:bg-nature-primary"
+                >Login</a
+              >
+              <a
+                class="btn bg-nature-primary text-white hover:bg-nature-secondary"
+                >Register</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
