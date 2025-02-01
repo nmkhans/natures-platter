@@ -52,6 +52,22 @@
               "nature-secondary": "#53DB3A",
               "nature-text": "#111111",
             },
+            keyframes: {
+              srug: {
+                "0%": {
+                  transform: "scale(1)",
+                },
+                "50%": {
+                  transform: "scale(1.2) translateY(-25%)",
+                },
+                "100%": {
+                  transform: "scale(1) translateY(0%)",
+                },
+              },
+            },
+            animation: {
+              srugs: "srug 2s ease-in-out infinite",
+            },
           },
         },
       };
@@ -174,7 +190,7 @@
           </div>
           <div class="mt-5">
             <img
-              class="lg:w-[70%] mx-auto motion-safe:animate-[wiggle_1s_ease-in-out_infinite]"
+              class="lg:w-[70%] mx-auto motion-safe:animate-srugs"
               src="./images/hero-vegetables.png"
               alt="Banner image"
             />
